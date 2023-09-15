@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.ToolsCalculateYarnAmountFragment">
+
+    <include
+        android:id="@+id/action_bar"
+        layout="@layout/actionbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextAppearance.App.Subtitle1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/yarn_in_pattern" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tools_calculation_layout_pattern_skein_length"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/len_pr_skein"
+                app:errorEnabled="true"
+                app:suffixText="@string/meters">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tools_calculation_edit_pattern_yarn_length"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="4" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tools_calculation_layout_pattern_skein_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/weight_pr_skein"
+                app:errorEnabled="true"
+                app:suffixText="@string/grams">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tools_calculation_edit_pattern_skein_weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="4" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tools_calculation_layout_pattern_skein_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/total_grams"
+                app:errorEnabled="true"
+                app:suffixText="@string/grams">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tools_calculation_edit_pattern_yarn_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="4" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                style="@style/TextAppearance.App.Subtitle1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="@string/yarn_i_use" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tools_calculation_layout_my_skein_length"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/len_pr_skein"
+                app:errorEnabled="true"
+                app:suffixText="@string/meters">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tools_calculation_edit_my_skein_length"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="4" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tools_calculation_layout_my_skein_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/weight_pr_skein"
+                app:errorEnabled="true"
+                app:suffixText="@string/grams">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tools_calculation_edit_my_skein_weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="4" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/tools_calculation_btn_calculate"
+                style="@style/Widget.App.Button.Primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:text="@string/calculate" />
+
+            <TextView
+                android:id="@+id/tools_calculation_view_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                android:text="@string/calculation_result"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/tools_calculation_btn_new_calculation"
+                style="@style/Widget.App.Button.Primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:text="@string/new_cal"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

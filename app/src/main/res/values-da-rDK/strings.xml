@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">&amp;Knit</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <!-- Navigation bar // Screen titles -->
+    <string name="profile">Profil</string>
+    <string name="projects">Projekter</string>
+    <string name="storage">Lager</string>
+    <string name="tools">Værktøjer</string>
+    <string name="videos">Videoer</string>
+
+    <!-- Register // Sign in -->
+    <string name="register">Registrer</string>
+    <string name="name">Navn</string>
+    <string name="minimumPassword">Minimum 6 tegn</string>
+
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+
+    <string name="sign_in">Log ind</string>
+    <string name="forgotPassword">Jeg har glemt mit password</string>
+
+    <string name="went_wrong">Noget gik galt. Prøv igen.</string>
+    <string name="enter_valid_mail">Indtast en gyldig e-mail</string>
+    <string name="enter_name">Indtast dit navn</string>
+    <string name="enter_password">Indtast dit password</string>
+    <string name="enter_valid_password">Dit password skal minimum være 6 tegn</string>
+    <string name="wrong_input">Forkert e-mail or password</string>
+
+
+    <!-- Action bar -->
+    <string name="add">Tilføj</string>
+
+    <!-- Profile Screen -->
+    <string name="statistics">Statistik</string>
+    <string name="completed_projects">færdiggjorde projekter</string>
+    <string name="skeins_used">brugte nøgler</string>
+    <string name="grams_used">gram strikket</string>
+    <string name="meters_knitted">meter strikket</string>
+
+    <string name="measurements">Mål</string>
+    <string name="bust">Bryst</string>
+    <string name="waist">Talje</string>
+    <string name="hips">Hofte</string>
+    <string name="hand_circum">Hånd omkreds</string>
+    <string name="hand_length">Hånd længde</string>
+    <string name="foot_circum">Fod omkreds</string>
+    <string name="foot_length">Fod længde</string>
+
+    <string name="add_person">Tilføj person</string>
+
+
+    <!-- Project Screen -->
+    <string name="active">Aktive projekter</string>
+    <string name="completed">Færdige projekter</string>
+
+    <!-- Add project -->
+    <string name="project_name">Projektnavn</string>
+
+    <string name="details">Detaljer</string>
+    <string name="size">Størrelse</string>
+    <string name="designer">Designer</string>
+    <string name="needle_size">Pind</string>
+    <string name="stitch_type">Mønster</string>
+    <string name="start_date">Startdato</string>
+    <string name="end_date">Slutdato</string>
+    <string name="yarn">Garn</string>
+    <string name="counter">Tællere</string>
+    <string name="add_cat">Tilføj kategori</string>
+    <string name="category">Kategori</string>
+
+    <string name="active_project">Aktivt projekt</string>
+    <string name="completed_project">Færdigt projekt</string>
+
+    <string name="save_changes">Gem ændringer?</string>
+    <string name="dont_save_project">Vil du navigere tilbage uden at gemme dit projekt?</string>
+
+
+    <string name="no_active_projects">Du har ingen aktive projekter</string>
+    <string name="no_completed_projects">Du har ingen færdiggjorte projekter</string>
+
+    <!-- Shared strings -->
+    <string name="notes">Noter</string>
+
+    <string-array name="categories">
+        <item>Sweater</item>
+        <item>Cardigan</item>
+        <item>Slipover</item>
+        <item>Tee/Top</item>
+        <item>Barn</item>
+        <item>Tilbehør</item>
+        <item>Interior</item>
+    </string-array>
+
+    <!-- Add buttons -->
+    <string name="add_project">Tilføj projekt</string>
+    <string name="add_pattern">Tilføj opskrift</string>
+    <string name="add_gauge">Tilføj strikkeprøve</string>
+    <string name="add_needles">Tilføj pinde</string>
+
+
+    <string name="save">Gem</string>
+    <string name="logout">Log ud</string>
+    <string name="delete_profile">Slet profil</string>
+    <string name="pattern">Opskrift</string>
+    <string name="use_mic">Brug mikrofon</string>
+    <string name="complete_project">Jeg er færdig med dette projekt</string>
+    <string name="delete_project">Slet projekt</string>
+    <string name="edit">Ret</string>
+
+
+    <!-- Counters -->
+    <string name="edit_name">Ændre navn</string>
+
+
+    <!-- Storage fragment -->
+    <string name="my_yarn">Garn</string>
+    <string name="my_needles">Pinde</string>
+    <string name="my_gauge_swatches">Strikke prøver</string>
+    <string name="my_patterns">Opskrifter</string>
+
+    <string name="no_yarn">Dit garnlager er tomt</string>
+    <string name="no_needles">Dit pindelager er tomt</string>
+    <string name="no_gauge_swatches">Dit strikkeprøvelager er tomt</string>
+    <string name="no_patterns">Dit opskriftslager er tomt</string>
+
+    <!-- Add Yarn -->
+    <string name="add_yarn">Tilføj garn</string>
+    <string name="yarn_name">Navn på garn</string>
+    <string name="yarn_brand">Producent</string>
+    <string name="yarn_color">Farve</string>
+    <string name="yarn_lot">Indfarvning</string>
+    <string name="skein_weight">Vægt pr. nøgle</string>
+    <string name="skein_length">Løbelængde pr. nøgle</string>
+    <string name="grams">gram</string>
+    <string name="skeins">nøgler</string>
+    <string name="weight25">25 gram</string>
+    <string name="weight50">50 gram</string>
+    <string name="weight100">100 gram</string>
+    <string name="weight200">200 gram</string>
+    <string name="weight300">300 gram</string>
+    <string name="weight400">400 gram</string>
+    <string name="weight500">500 gram</string>
+    <string name="amountSkein">Antal nøgler</string>
+    <string name="amount">Mængde</string>
+    <string name="amountWeight">Total mængde gram</string>
+    <string name="amountMeters">Total antal meter</string>
+    <string name="cSkeins">Nøgler</string>
+    <string name="cGrams">Gram</string>
+
+    <!-- Add Gauge -->
+    <string name="gaugeCm">Strikkefasthed</string>
+    <string name="sts">Masker</string>
+    <string name="rows">Pinde</string>
+    <string name="pr_10_cm">/10 cm</string>
+    <string name="in">i</string>
+
+    <!-- Add pattern -->
+    <string name="pdf">Upload PDF</string>
+    <string name="photo">Upload billeder</string>
+    <string name="namePattern">Navn på opskrift</string>
+    <string name="nameDesigner">Navn på designer</string>
+    <string name="photos">Billeder:</string>
+    <string name="uploadMorePhotos">Upload flere billeder</string>
+    <string name="noImagesOrPDF">Der er ikke valgt nogle billeder eller PDF-fil</string>
+    <string name="replacePattern">Erstat opskrift?</string>
+    <string name="patternAlreadyExists">eksisterer allerede i dit lager. Vil du erstatte opskriften?</string>
+    <string name="enterPatternName">Indtast opskriftens navn</string>
+
+
+    <!-- Add needles -->
+    <string name="needle_type">Type</string>
+    <string name="circular">Rundpind</string>
+    <string name="double_pointed">Strømpepinde</string>
+    <string name="interchangeable">Udskiftlige rundpinde</string>
+    <string name="crochet_hook">Hæklenål</string>
+    <string name="other">Andet</string>
+
+    <string name="needle_sizes">Pindestørrelse(r)</string>
+    <string name="size2">2 mm</string>
+    <string name="size225">2.25 mm</string>
+    <string name="size25">2.5 mm</string>
+    <string name="size275">2.75 mm</string>
+    <string name="size3">3 mm</string>
+    <string name="size325">3.25 mm</string>
+    <string name="size35">3.5 mm</string>
+    <string name="size375">3.75 mm</string>
+    <string name="size4">4 mm</string>
+    <string name="size45">4.5 mm</string>
+    <string name="size5">5 mm</string>
+    <string name="size55">5.5 mm</string>
+    <string name="size6">6 mm</string>
+    <string name="size65">6.5 mm</string>
+    <string name="size7">7 mm</string>
+    <string name="size8">8 mm</string>
+    <string name="size9">9 mm</string>
+    <string name="size10">10 mm</string>
+    <string name="size12">12 mm</string>
+    <string name="size15">15 mm</string>
+    <string name="size20">20 mm</string>
+
+    <string name="needle_length">Pindelængde</string>
+    <string name="len5">5 cm</string>
+    <string name="len10">10 cm</string>
+    <string name="len12">12 cm</string>
+    <string name="len14">14 cm</string>
+    <string name="len20">20 cm</string>
+
+    <string name="wire_length">Wirelængde</string>
+    <string name="len13">13 cm</string>
+    <string name="len30">30 cm</string>
+    <string name="len40">40 cm</string>
+    <string name="len60">60 cm</string>
+    <string name="len80">80 cm</string>
+    <string name="len100">100 cm</string>
+    <string name="len120">120 cm</string>
+
+    <string name="material">Materiale</string>
+    <string name="wood">Træ</string>
+    <string name="bamboos">Bambus</string>
+    <string name="metal">Metal</string>
+
+    <!-- Needle item -->
+    <string name="sizes">Størrelse(r): </string>
+
+    <!-- Tools -->
+    <string name="calculate_yarn_amount">Udregn garnmængde</string>
+
+    <!-- Counter -->
+    <string name="counter_name">Tællers navn</string>
+    <string name="listen"><k>Lytter...</k></string>
+    <string name="no_counters">Du har ingen tællere</string>
+
+    <!-- Calculate yarn amount -->
+    <string name="yarn_in_pattern">Garn i opskrift</string>
+    <string name="meters">meter</string>
+    <string name="len_pr_skein">Løbelængde pr. nøgle</string>
+    <string name="weight_pr_skein">Vægt pr.nøgle</string>
+    <string name="total_grams">Total antal gram</string>
+    <string name="yarn_i_use">Det garn jeg vil strikke med</string>
+
+    <string name="calculate">Udregn</string>
+    <string name="new_cal">ny udregning</string>
+
+    <string name="calculation_result">Du skal bruge <b>%s</b> garnnøgler af dit garn</string>
+
+    <string name="error">Input er nødvendigt</string>
+    <string name="delete">Slet</string>
+
+    <string name="needle_lengths">Pindelænge:</string>
+    <string name="wire_lengths">Wirelængde:</string>
+    <string name="needle_material">Pinde materiale:</string>
+
+
+    <!-- Videos -->
+    <string name="cast_on">Slå masker op</string>
+    <string name="cast_on_description">Slå masker op som det første i dit projekt</string>
+    <string name="cast_on_sts">Slå masker op</string>
+    <string name="cast_on_sts_description">Den mest almindelige opslagningsmetode</string>
+    <string name="italian_cast_on">Italiensk opslag</string>
+    <string name="italian_cast_on_description">Italiensk opslag og to pinde dobbelstrik</string>
+    <string name="judys_magic_cast_on">Judy\'s Magic cast on</string>
+    <string name="judys_magic_cast_on_description">Opslagningsmetode på to pinde</string>
+
+    <string name="increases">Udtag</string>
+    <string name="increases_description">Form dit strik ved at tilføje masker</string>
+    <string name="m1r">Højre udtag</string>
+    <string name="m1r_description">Lav udtag i lænken der hælder til højre</string>
+    <string name="m1l">Venstre udtag</string>
+    <string name="m1l_description">Lav udtag i lænken der hælder til venstre</string>
+
+    <string name="decreases">Indtag</string>
+    <string name="decreases_description">… eller ved at tage masker ind</string>
+    <string name="ssk">Strik 2 m r sm</string>
+    <string name="ssk_description">Indtag der hælder til venstre</string>
+    <string name="K2TOG">Strik 2 m dr sm</string>
+    <string name="K2TOG_description">Indtag der hælder til højre</string>
+
+    <string name="bind_off">Luk masker af</string>
+    <string name="bind_off_description">Færdiggør dit strik med at lukke masker af</string>
+    <string name="basic_bind_off">Almindelig aflukning</string>
+    <string name="basic_bind_off_description">Den mest almindelige alukning</string>
+    <string name="italian_bind_off">Italiensk aflukning</string>
+    <string name="italian_bind_off_description">Afluk masker ved at sy maskerne</string>
+
+    <string name="short_rows">Short rows</string>
+    <string name="short_rows_description">Skab en pæn overgang mellem strikkede og ikke-strikkede masker</string>
+    <string name="german_short_rows">German Short Rows</string>
+    <string name="german_short_rows_description">Vend mens du strikker</string>
+
+    <string name="finishing_techniques">Afslutningsteknikker</string>
+    <string name="finishing_techniques_description">Tilføj de sidste detaljer til dit projekt</string>
+    <string name="sew_elastic">Sy elastik i dit strik</string>
+    <string name="sew_elastic_description">Lad maskerne blive hvor de skal</string>
+    <string name="weave_in_ends">Hæft garnender</string>
+    <string name="weave_in_ends_description">Skjul garnenderne i dit strik</string>
+
+
+    <!-- Dialog fragments -->
+    <string name="add_new_yarn">Tilføj nyt garn til lager</string>
+    <string name="add_new_pattern">Tilføj ny opskrift til lager</string>
+    <string name="move_to_completed">Flyt til færdige projekter</string>
+    <string name="amount_grams_leftover">Mængde af gram der er tilovers</string>
+    <string name="no_yarn_in_project">Du har ikke tilføjet garn til dette projekt</string>
+
+    <!-- Alert dialogs -->
+    <!-- Patterns -->
+    <string name="alert_title_delete_pattern">Slet opskrift?</string>
+    <string name="alert_message_delete_pattern">Er du sikker på at du vil slette </string>
+    <!-- Gauge swatches -->
+    <string name="alert_title_delete_gauge">Slet strikkeprøve?</string>
+    <string name="alert_message_delete_gauge">Er du sikker på at du vil slette strikkeprøven?</string>
+    <!-- Needles -->
+    <string name="alert_title_delete_needles">Slet pinde?</string>
+    <string name="alert_message_delete_needles">Er du sikker på at du vil slette strikkepindene?</string>
+    <!-- Person -->
+    <string name="alert_title_delete_person">Slet person?</string>
+    <string name="alert_message_delete_person">Er du sikker på at du vil slette </string>
+    <!-- Project item -->
+    <string name="alert_title_delete_project">Slet projekt?</string>
+    <string name="alert_message_delete_project">Er du sikker på at du vil slette </string>
+    <!-- Choose image -->
+    <string name="take_photo">Tag billede</string>
+    <string name="choose_from_gallery">Vælg fra galleri</string>
+    <!-- Profile -->
+    <string name="alert_title_logout">Log ud?</string>
+    <string name="alert_message_logout">Er du sikker på at du vil logge ud?</string>
+    <string name="alert_title_delete_user">Slet konto?</string>
+    <string name="alert_message_delete_user">Er du sikker på at du vil slette din konto?</string>
+    <!-- Yarn -->
+    <string name="alert_title_delete_yarn">Slet garn?</string>
+    <string name="alert_message_delete_yarn">Er du sikker på at du vil slette </string>
+    <!-- Update yarn leftover -->
+    <string name="dialog_register_leftover_yarn">Indtast din mængde af overskudsgarn</string>
+    <!-- Add project -->
+    <string name="require_name">Projektnavn skal udfyldes</string>
+
+    <string name="yes">Ja</string>
+    <string name="no">Nej</string>
+
+
+</resources>

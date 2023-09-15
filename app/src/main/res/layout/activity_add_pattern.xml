@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:transitionName="transition_fab"
+    tools:context=".activities.AddPatternActivity">
+
+    <include
+        android:id="@+id/action_bar"
+        layout="@layout/actionbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/add_pattern_btn_add_pdf"
+                style="@style/Widget.App.Button.Secondary"
+                android:layout_width="280dp"
+                android:layout_height="66dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="@string/pdf" />
+
+            <TextView
+                android:id="@+id/add_patterns_view_pdf"
+                style="@style/TextAppearance.App.Subtitle1"
+                android:layout_width="280dp"
+                android:layout_height="66dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/background_pattern"
+                android:gravity="center"
+                android:paddingStart="30dp"
+                android:visibility="gone"
+                app:drawableStartCompat="@drawable/icon_article"
+                app:drawableTint="@color/primary_color_900" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/add_pattern_recycler_view_images"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:scrollbarStyle="outsideInset"
+                android:scrollbars="horizontal"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/add_patterns_view_images_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/add_patterns_btn_add_images"
+                style="@style/Widget.App.Button.Secondary"
+                android:layout_width="280dp"
+                android:layout_height="66dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:text="@string/photo" />
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/add_pattern_progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/add_pattern_layout_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/namePattern"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/add_pattern_edit_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/nameDesigner"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/add_pattern_edit_designer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/dropdownMenu"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:hint="@string/add_cat">
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

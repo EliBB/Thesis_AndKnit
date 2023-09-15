@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.ProjectItemFragment">
+
+    <include
+        android:id="@+id/action_bar"
+        layout="@layout/actionbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/project_item_imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="2dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/border_radius_10"
+                    android:clipToOutline="true"
+                    android:src="@drawable/img_yarn_ball_and_needles"
+                    />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/project_item_fab_add_image_after"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="50dp"
+                    app:fabSize="mini"
+                    app:srcCompat="@drawable/icon_add_a_photo" />
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+            <!-- Details container -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="-40dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:elevation="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_radius_10"
+                    android:backgroundTint="@color/secondary_color_300"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <!-- Project name -->
+                    <TextView
+                        android:id="@+id/view_project_name"
+                        style="@style/TextAppearance.App.Headline3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/layout_edit_project_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:hint="@string/project_name"
+                        android:visibility="gone"
+                        app:errorEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edit_project_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:inputType="textCapWords"
+                            android:singleLine="true" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!-- Pattern -->
+                    <TextView
+                        android:id="@+id/project_item_title_pattern"
+                        style="@style/TextAppearance.App.Subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:padding="10dp"
+                        android:text="@string/pattern"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/project_item_view_pattern"
+                        style="@style/TextAppearance.App.Subtitle1"
+                        android:layout_width="280dp"
+                        android:layout_height="66dp"
+                        android:background="@drawable/background_pattern"
+                        android:drawablePadding="30dp"
+                        android:gravity="center|start"
+                        android:paddingStart="30dp"
+                        android:textColor="@color/primary_color_500"
+                        android:visibility="gone"
+                        app:drawableStartCompat="@drawable/icon_article"
+                        app:drawableTint="@color/primary_color_500" />
+
+                    <!-- Details -->
+                    <TextView
+                        style="@style/TextAppearance.App.Subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:padding="10dp"
+                        android:text="@string/details" />
+
+                    <TableLayout
+                        android:id="@+id/project_item_tablelayout_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginEnd="40dp">
+
+                        <!-- Size | Designer -->
+                        <TableRow>
+
+                            <TextView
+                                style="@style/TextAppearance.App.Subtitle2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/size" />
+
+                            <TextView
+                                style="@style/TextAppearance.App.Subtitle2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/designer" />
+
+                        </TableRow>
+
+                        <!-- View Size | Designer -->
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/project_item_view_size"
+                                style="@style/TextAppearance.App.Body"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:id="@+id/project_item_view_designer"
+                                style="@style/TextAppearance.App.Body"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </TableRow>
+
+                        <!-- Stitches | Rows -->
+                        <TableRow android:layout_marginTop="20dp">
+
+                            <TextView
+                                style="@style/TextAppearance.App.Subtitle2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/sts" />
+
+                            <TextView
+                                style="@style/TextAppearance.App.Subtitle2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/rows" />
+
+                        </TableRow>
+
+                        <!-- View Stitches | Rows -->
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/project_item_view_stitches"
+                                style="@style/TextAppearance.App.Body"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:id="@+id/project_item_view_rows"
+                                style="@style/TextAppearance.App.Body"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </TableRow>
+
+                        <!-- Needle size | Stitch type -->
+                        <TableRow android:layout_marginTop="20dp">
+
+                            <TextView
+                                style="@style/TextAppearance.App.Subtitle2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/needle_size" />
+
+                            <TextView
+                                style="@style/TextAppearance.App.Subtitle2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/stitch_type" />
+
+                        </TableRow>
+
+                        <!-- View Needle size | Stitch type -->
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/project_item_view_needle_size"
+                                style="@style/TextAppearance.App.Body"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:id="@+id/project_item_view_stitch_type"
+                                style="@style/TextAppearance.App.Body"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </TableRow>
+
+                        <!-- Category -->
+                        <TableRow android:layout_marginTop="20dp">
+
+                            <TextView
+                                style="@style/TextAppearance.App.Subtitle2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/category" />
+
+                        </TableRow>
+
+                        <!-- View Category -->
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/project_item_view_category"
+                                style="@style/TextAppearance.App.Body"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </TableRow>
+
+                        <!-- Start date | End date -->
+
+                        <TableRow android:layout_marginTop="20dp">
+
+                            <TextView
+                                style="@style/TextAppearance.App.Subtitle2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/start_date" />
+
+                            <TextView
+                                android:id="@+id/project_item_view_end_date_title"
+                                style="@style/TextAppearance.App.Subtitle2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/end_date"
+                                android:visibility="invisible" />
+
+                        </TableRow>
+
+                        <!-- View Start date | End date -->
+
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/project_item_view_start_date"
+                                style="@style/TextAppearance.App.Body"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:id="@+id/project_item_view_end_date"
+                                style="@style/TextAppearance.App.Body"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </TableRow>
+                    </TableLayout>
+
+                    <!-- Edit inputs -->
+                    <TableLayout
+                        android:id="@+id/project_item_tablelayout_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <!-- Edit Size | Designer -->
+                        <TableRow>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="@string/size"
+                                android:paddingEnd="5dp"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/project_item_edit_size"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="textCapWords"
+                                    android:singleLine="true" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="@string/designer"
+                                android:paddingStart="5dp"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/project_item_edit_designer"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="textCapWords"
+                                    android:singleLine="true" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </TableRow>
+
+                        <!-- Edit Stitches | Rows -->
+                        <TableRow>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="@string/sts"
+                                android:paddingEnd="5dp"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/project_item_edit_stitches"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="number"
+                                    android:singleLine="true" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="@string/rows"
+                                android:paddingStart="5dp"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/project_item_edit_rows"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="number"
+                                    android:singleLine="true" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </TableRow>
+
+                        <!-- Edit Needle size | Stitch type -->
+                        <TableRow>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="@string/needle_size"
+                                android:paddingEnd="5dp"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/project_item_edit_needle_size"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="number"
+                                    android:singleLine="true" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="@string/stitch_type"
+                                android:paddingStart="5dp"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/project_item_edit_stitch_type"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="textCapWords"
+                                    android:singleLine="true" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </TableRow>
+
+                        <!-- Edit Category -->
+                        <TableRow>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="@string/category"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/project_item_edit_category"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="textCapWords"
+                                    android:singleLine="true" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </TableRow>
+
+                        <TableRow>
+
+                            <!-- Edit Start date | End date -->
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="@string/start_date"
+                                android:paddingStart="5dp"
+                                app:endIconDrawable="@drawable/icon_edit_calendar"
+                                app:endIconMode="custom"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/project_item_edit_start_date"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="date"
+                                    android:paddingStart="15dp"
+                                    android:paddingEnd="15dp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/project_item_layout_edit_end_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="@string/end_date"
+                                android:paddingStart="5dp"
+                                app:endIconDrawable="@drawable/icon_edit_calendar"
+                                app:endIconMode="custom"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/project_item_edit_end_date"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="date"
+                                    android:paddingStart="15dp"
+                                    android:paddingEnd="15dp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                    <!-- Yarn-->
+                    <TextView
+                        android:id="@+id/project_item_title_yarn"
+                        style="@style/TextAppearance.App.Subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:padding="10dp"
+                        android:text="@string/yarn"
+                        android:visibility="gone" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/project_item_recyclerview_yarn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                    <!-- Notes -->
+                    <TextView
+                        style="@style/TextAppearance.App.Subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:padding="10dp"
+                        android:text="@string/notes" />
+
+                    <TextView
+                        android:id="@+id/project_item_view_notes"
+                        style="@style/TextAppearance.App.Body"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginEnd="40dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/project_item_edit_notes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textMultiLine"
+                            android:padding="10dp"
+                            android:visibility="gone" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Counter -->
+            <TextView
+                android:id="@+id/project_item_title_counters"
+                style="@style/TextAppearance.App.Subtitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:padding="10dp"
+                android:text="@string/counter"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/project_item_layout_counters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/project_item_btn_add_counter"
+                    android:layout_width="48dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/border_radius_30"
+                    android:backgroundTint="@color/primary_color_200"
+                    android:padding="10dp"
+                    android:src="@drawable/icon_add"
+                    app:tint="@color/primary_color_900" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/project_item_recyclerview_counters"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/project_item_btn_completed_project"
+                style="@style/Widget.App.Button.Primary"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"
+                android:text="@string/complete_project"
+                android:visibility="gone" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp" />
+
+            <Button
+                android:id="@+id/project_item_btn_delete_project"
+                style="@style/Widget.App.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:text="@string/delete_project"
+                app:icon="@drawable/icon_delete" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

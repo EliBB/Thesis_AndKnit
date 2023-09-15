@@ -1,0 +1,336 @@
+<resources>
+    <string name="app_name">&amp;Knit</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <!-- Navigation bar // Screen titles -->
+    <string name="profile">Profile</string>
+    <string name="projects">Projects</string>
+    <string name="storage">Storage</string>
+    <string name="tools">Tools</string>
+    <string name="videos">Videos</string>
+
+    <!-- Register // Sign in -->
+    <string name="register">Register</string>
+    <string name="name">Name</string>
+    <string name="minimumPassword">Minimum 6 characters</string>
+
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+
+    <string name="sign_in">Sign in</string>
+    <string name="forgotPassword">I forgot my password</string>
+
+    <string name="enter_valid_mail">Please enter a valid e-mail</string>
+    <string name="enter_name">Please enter your name</string>
+    <string name="enter_valid_password">Your password must be at least 6 characters</string>
+    <string name="enter_password">Please enter your password</string>
+    <string name="went_wrong">Something went wrong. Please try again.</string>
+    <string name="wrong_input">Incorrect e-mail or password</string>
+
+
+    <!-- Profile Screen -->
+    <string name="statistics">Statistics</string>
+    <string name="completed_projects">completed projects</string>
+    <string name="skeins_used">skeins used</string>
+    <string name="grams_used">grams used</string>
+    <string name="meters_knitted">meters knitted</string>
+
+    <string name="measurements">Measurements</string>
+    <string name="bust">Bust</string>
+    <string name="waist">Waist</string>
+    <string name="hips">Hips</string>
+    <string name="hand_circum">Hand circumference</string>
+    <string name="hand_length">Hand length</string>
+    <string name="foot_circum">Foot circumference</string>
+    <string name="foot_length">Foot length</string>
+
+    <string name="add_person">Add person</string>
+
+
+    <!-- Project Screen -->
+    <string name="active">Active projects</string>
+    <string name="completed">Completed projects</string>
+
+    <!-- Add project -->
+    <string name="project_name">Project name</string>
+
+    <string name="details">Details</string>
+    <string name="size">Size</string>
+    <string name="designer">Designer</string>
+    <string name="needle_size">Needle size</string>
+    <string name="stitch_type">Stitch type</string>
+    <string name="start_date">Start date</string>
+    <string name="end_date">End date</string>
+    <string name="yarn">Yarn</string>
+    <string name="counter">Counters</string>
+    <string name="add_cat">Add category</string>
+    <string name="category">Category</string>
+
+    <string name="active_project">Active project</string>
+    <string name="completed_project">Completed project</string>
+
+    <string name="save_changes">Save changes?</string>
+    <string name="dont_save_project">Do you want to navigate back without saving your project?</string>
+
+    <string name="no_active_projects">You have no active projects</string>
+    <string name="no_completed_projects">You have no completed projects</string>
+
+    <!-- Shared strings -->
+    <string name="notes">Notes</string>
+    <string-array name="categories">
+        <item>Sweater</item>
+        <item>Cardigan</item>
+        <item>Slipover</item>
+        <item>Tee/Top</item>
+        <item>Child</item>
+        <item>Accessory</item>
+        <item>Interior</item>
+    </string-array>
+
+    <string name="add">Add</string>
+
+    <!-- Add buttons -->
+
+    <string name="add_project">Add project</string>
+    <string name="add_pattern">Add pattern</string>
+    <string name="add_gauge">Add gauge swatch</string>
+    <string name="add_needles">Add needles</string>
+
+
+    <string name="save">Save</string>
+    <string name="logout">Logout</string>
+    <string name="delete_profile">Delete profile</string>
+    <string name="pattern">Pattern</string>
+    <string name="use_mic">Use microphone</string>
+    <string name="complete_project">I completed this project</string>
+    <string name="delete_project">Delete project</string>
+    <string name="edit">Edit</string>
+
+    <!-- Counters -->
+    <string name="edit_name">Edit name</string>
+
+    <!-- Storage fragment -->
+    <string name="my_yarn">Yarn</string>
+    <string name="my_needles">Needles</string>
+    <string name="my_gauge_swatches">Gauge swatches</string>
+    <string name="my_patterns">Patterns</string>
+
+    <string name="no_yarn">Your yarn stash is empty</string>
+    <string name="no_needles">Your needle stash is empty</string>
+    <string name="no_gauge_swatches">Your gauge swatch stash is empty</string>
+    <string name="no_patterns">Your pattern stash is empty</string>
+
+    <!-- Add Yarn -->
+    <string name="add_yarn">Add yarn</string>
+    <string name="yarn_name">Name of yarn</string>
+    <string name="yarn_brand">Brand</string>
+    <string name="yarn_color">Color</string>
+    <string name="yarn_lot">Lot.</string>
+    <string name="skein_weight">Weight per skein</string>
+    <string name="skein_length">Length per skein</string>
+    <string name="grams">grams</string>
+    <string name="skeins">skeins</string>
+    <string name="weight25">25 gram</string>
+    <string name="weight50">50 gram</string>
+    <string name="weight100">100 gram</string>
+    <string name="weight200">200 gram</string>
+    <string name="weight300">300 gram</string>
+    <string name="weight400">400 gram</string>
+    <string name="weight500">500 gram</string>
+    <string name="amountSkein">Number of skeins</string>
+    <string name="amount">Amount</string>
+    <string name="amountWeight">Total grams</string>
+    <string name="amountMeters">Total meters</string>
+    <string name="cSkeins">Skeins</string>
+    <string name="cGrams">Grams</string>
+
+    <!-- Add Gauge -->
+    <string name="gaugeCm">Gauge</string>
+    <string name="sts">Stitches</string>
+    <string name="rows">Rows</string>
+    <string name="pr_10_cm">/10 cm</string>
+    <string name="in">in</string>
+
+    <!-- Add pattern -->
+    <string name="pdf">Upload PDF</string>
+    <string name="photo">Upload images</string>
+    <string name="namePattern">Name of pattern</string>
+    <string name="nameDesigner">Name of designer</string>
+    <string name="photos">Images:</string>
+    <string name="uploadMorePhotos">Upload more images</string>
+    <string name="noImagesOrPDF">There is no images or PDF-file uploaded</string>
+    <string name="replacePattern">Replace pattern?</string>
+    <string name="patternAlreadyExists">already exists in your stash. Do you want to replace this pattern?"</string>
+    <string name="enterPatternName">Please enter the name of the pattern</string>
+
+    <!-- Add needles -->
+    <string name="needle_type">Type</string>
+    <string name="circular">Circular</string>
+    <string name="double_pointed">Double-pointed</string>
+    <string name="interchangeable">Interchangeable</string>
+    <string name="crochet_hook">Crochet hook</string>
+    <string name="other">Other</string>
+
+    <string name="needle_sizes">Needle size(s)</string>
+    <string name="size2">2 mm</string>
+    <string name="size225">2.25 mm</string>
+    <string name="size25">2.5 mm</string>
+    <string name="size275">2.75 mm</string>
+    <string name="size3">3 mm</string>
+    <string name="size325">3.25 mm</string>
+    <string name="size35">3.5 mm</string>
+    <string name="size375">3.75 mm</string>
+    <string name="size4">4 mm</string>
+    <string name="size45">4.5 mm</string>
+    <string name="size5">5 mm</string>
+    <string name="size55">5.5 mm</string>
+    <string name="size6">6 mm</string>
+    <string name="size65">6.5 mm</string>
+    <string name="size7">7 mm</string>
+    <string name="size8">8 mm</string>
+    <string name="size9">9 mm</string>
+    <string name="size10">10 mm</string>
+    <string name="size12">12 mm</string>
+    <string name="size15">15 mm</string>
+    <string name="size20">20 mm</string>
+
+    <string name="needle_length">Needle length</string>
+    <string name="len5">5 cm</string>
+    <string name="len10">10 cm</string>
+    <string name="len12">12 cm</string>
+    <string name="len14">14 cm</string>
+    <string name="len20">20 cm</string>
+
+    <string name="wire_length">Wire length</string>
+    <string name="len13">13 cm</string>
+    <string name="len30">30 cm</string>
+    <string name="len40">40 cm</string>
+    <string name="len60">60 cm</string>
+    <string name="len80">80 cm</string>
+    <string name="len100">100 cm</string>
+    <string name="len120">120 cm</string>
+
+    <string name="material">Material</string>
+    <string name="wood">Wood</string>
+    <string name="bamboos">Bamboos</string>
+    <string name="metal">Metal</string>
+
+    <!-- Needle item -->
+    <string name="sizes">Size(s):</string>
+
+    <!-- Tools -->
+    <string name="calculate_yarn_amount">Calculate yarn amount</string>
+
+    <!-- Counter -->
+    <string name="counter_name">Your counters name</string>
+    <string name="listen"><k>Listening...</k></string>
+    <string name="no_counters">You have no counters</string>
+
+    <!-- Calculate yarn amount -->
+    <string name="yarn_in_pattern">Yarn in pattern</string>
+    <string name="meters">meters</string>
+    <string name="len_pr_skein">Length per skein</string>
+    <string name="weight_pr_skein">Weight per skein</string>
+    <string name="total_grams">Total amount of yarn</string>
+    <string name="yarn_i_use">The yarn I want to use</string>
+
+    <string name="calculate">Calculate</string>
+    <string name="new_cal">New calculation</string>
+
+    <string name="calculation_result">You need <b>%s</b> yarn balls of your yarn</string>
+
+    <string name="error">Field is required</string>
+    <string name="delete">Delete</string>
+
+    <string name="needle_lengths">Needle length:</string>
+    <string name="wire_lengths">Wire lengths:</string>
+    <string name="needle_material">Needle material:</string>
+
+    <!-- Videos -->
+    <string name="cast_on">Cast on techniques</string>
+    <string name="cast_on_description">Cast on as the first step of your project</string>
+    <string name="cast_on_sts">Cast on stitches</string>
+    <string name="cast_on_sts_description">Basic method to cast on stitches</string>
+    <string name="italian_cast_on">Italian Cast on</string>
+    <string name="italian_cast_on_description">Italian cast on and two rows of double knit</string>
+    <string name="judys_magic_cast_on">Judy\'s Magic cast on</string>
+    <string name="judys_magic_cast_on_description">Cast on method on two needles</string>
+
+    <string name="increases">Increases</string>
+    <string name="increases_description">Shape your knitwear by adding stitches</string>
+    <string name="m1r">M1R</string>
+    <string name="m1r_description">Make one right</string>
+    <string name="m1l">M1L</string>
+    <string name="m1l_description">Make one left</string>
+
+    <string name="decreases">Decreases</string>
+    <string name="decreases_description">… or by decreasing the number of stitches</string>
+    <string name="ssk">SSK</string>
+    <string name="ssk_description">Left leaning decrease</string>
+    <string name="K2TOG">K2TOG</string>
+    <string name="K2TOG_description">Right leaning decrease</string>
+
+    <string name="bind_off">Bind off techniques</string>
+    <string name="bind_off_description">Finish your garment by casting off stitches</string>
+    <string name="basic_bind_off">Basic bind off</string>
+    <string name="basic_bind_off_description">The most common bind off technique</string>
+    <string name="italian_bind_off">Italian bind off</string>
+    <string name="italian_bind_off_description">Also known as K1P1 bind off</string>
+
+    <string name="short_rows">Short rows</string>
+    <string name="short_rows_description">Create a smooth transition between worked and unworked stitches</string>
+    <string name="german_short_rows">German Short Rows</string>
+    <string name="german_short_rows_description">Turning while knitting</string>
+
+    <string name="finishing_techniques">Finishing techniques</string>
+    <string name="finishing_techniques_description">Add the final touches to your project</string>
+    <string name="sew_elastic">Sew elastic thread in knitwear</string>
+    <string name="sew_elastic_description">Keep the stitches in place</string>
+    <string name="weave_in_ends">Weave in ends</string>
+    <string name="weave_in_ends_description">Hide your yarn ends</string>
+
+    <!-- Dialog fragments -->
+    <string name="add_new_yarn">Add new yarn to stash</string>
+    <string name="add_new_pattern">Add new pattern</string>
+    <string name="move_to_completed">Move to completed</string>
+    <string name="amount_grams_leftover">Amount of leftover grams</string>
+    <string name="no_yarn_in_project">You have not assigned any yarn for this project</string>
+
+
+    <!-- Alert dialogs -->
+    <!-- Pattern -->
+    <string name="alert_title_delete_pattern">Delete pattern?</string>
+    <string name="alert_message_delete_pattern">Are you sure you want to delete </string>
+    <!-- Gauge swatch -->
+    <string name="alert_title_delete_gauge">Delete gauge swatch?</string>
+    <string name="alert_message_delete_gauge">Are you sure you want to delete the gauge swatch?</string>
+    <!-- Needles -->
+    <string name="alert_title_delete_needles">Delete needles?</string>
+    <string name="alert_message_delete_needles">Are you sure you want to delete the needles?</string>
+    <!-- Persons -->
+    <string name="alert_title_delete_person">Delete person?</string>
+    <string name="alert_message_delete_person">Are you sure you want to delete </string>
+    <!-- Project item -->
+    <string name="alert_title_delete_project">Delete project?</string>
+    <string name="alert_message_delete_project">Are you sure you want to delete </string>
+    <!-- Choose image -->
+    <string name="take_photo">Take photo</string>
+    <string name="choose_from_gallery">Choose from gallery</string>
+    <!-- Profile -->
+    <string name="alert_title_logout">Log out?</string>
+    <string name="alert_message_logout">Are you sure you want to log out?</string>
+    <string name="alert_title_delete_user">Delete your account?</string>
+    <string name="alert_message_delete_user">Are you sure you want to delete your account?</string>
+    <!-- Yarn -->
+    <string name="alert_title_delete_yarn">Delete yarn?</string>
+    <string name="alert_message_delete_yarn">Are you sure you want to delete</string>
+    <!-- Update yarn leftover -->
+    <string name="dialog_register_leftover_yarn">Register amount of leftover yarn</string>
+    <!-- Add project -->
+    <string name="require_name">Name for the project is required</string>
+    
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+
+</resources>

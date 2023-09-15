@@ -1,1 +1,3 @@
-# Thesis_AndKnit
+# AndKnit
+This app has been developed in the Spring of 2023 as a part of my thesis on the master’s degree in Software Design at the IT-University of Copenhagen.
+The app is developed for people who enjoys knitting and aims to be a valuable tool in knitting projects. The &Knit app lets the user get an overview of active and completed projects, yarn, needles, gauge swatches, and patterns, calculate the correct yarn amount, keep track of counts, and watch video tutorials. Additionally, it stores body measurements and personal notes. The data for the &Knit app is stored on the cloud-server Firebase to ensure that the user can access the data on multiple devices. 

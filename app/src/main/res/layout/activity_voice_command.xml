@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    tools:context=".activities.VoiceCommandActivity">
+
+    <include
+        android:id="@+id/voice_command_action_bar"
+        layout="@layout/actionbar" />
+
+    <TextView
+        android:id="@+id/voice_command_view_name"
+        style="@style/TextAppearance.App.Headline3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:hint="@string/counter_name" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/voice_command_layout_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
+        android:hint="@string/counter_name"
+        android:visibility="gone">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/voice_command_edit_name"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableEnd="@drawable/icon_done"
+            android:gravity="center"
+            android:inputType="textCapWords"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/voice_command_view_count"
+        style="@style/TextAppearance.App.Headline2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/voice_command_btn_decrement"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/border_radius_30"
+            android:backgroundTint="@color/primary_color_500"
+            android:padding="10dp"
+            android:src="@drawable/icon_remove"
+            app:tint="@color/primary_color_50" />
+
+        <ImageView
+            android:id="@+id/voice_command_btn_reset"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/border_radius_30"
+            android:padding="10dp"
+            android:src="@drawable/icon_settings_backup_restore"
+            app:tint="@color/primary_color_500" />
+
+        <ImageView
+            android:id="@+id/voice_command_btn_increment"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/border_radius_30"
+            android:backgroundTint="@color/primary_color_500"
+            android:padding="10dp"
+            android:src="@drawable/icon_add"
+            app:tint="@color/primary_color_50" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/voice_command_btn_microphone"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/icon_mic"
+        app:tint="@color/primary_color_900" />
+
+    <TextView
+        android:id="@+id/voice_command_view_listening"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="@string/listen"
+        android:visibility="invisible" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/voice_command_progress_bar"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:indeterminate="true"/>
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="40dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginEnd="40dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TableRow android:layout_marginBottom="40dp">
+
+                <TextView
+                    android:id="@+id/item_counter_view_name"
+                    style="@style/TextAppearance.App.Subtitle1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:text="@string/counter_name" />
+
+                <EditText
+                    android:id="@+id/item_counter_edit_name"
+                    style="@style/TextAppearance.App.Subtitle1"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:hint="@string/counter_name"
+                    android:inputType="textCapWords"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/item_counter_view_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_more" />
+
+                <ImageView
+                    android:id="@+id/item_counter_view_done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_done"
+                    android:visibility="gone" />
+            </TableRow>
+
+            <LinearLayout>
+
+                <ImageView
+                    android:id="@+id/item_counter_decrement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="54dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:src="@drawable/icon_remove" />
+
+                <TextView
+                    android:id="@+id/item_counter_count"
+                    style="@style/TextAppearance.App.Headline3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="54dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:gravity="center" />
+
+                <ImageView
+                    android:id="@+id/item_counter_increment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:src="@drawable/icon_add" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/item_counter_btn_microphone"
+                style="@style/Widget.App.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:drawableEnd="@drawable/icon_mic"
+                android:text="@string/use_mic" />
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

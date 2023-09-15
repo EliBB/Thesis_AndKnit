@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_needles_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <!-- Needle type -->
+        <TextView
+            android:id="@+id/item_needles_type"
+            style="@style/TextAppearance.App.Subtitle2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/needle_type" />
+
+        <LinearLayout
+            android:id="@+id/item_needles_view_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Needle sizes -->
+                <TableRow
+                    android:id="@+id/sizes_row"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/TextAppearance.App.Subtitle2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="10dp"
+                        android:text="@string/sizes" />
+
+                    <TextView
+                        android:id="@+id/item_needles_size"
+                        style="@style/TextAppearance.App.Subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="200dp" />
+                </TableRow>
+
+                <!-- Needle Length -->
+                <TableRow
+                    android:id="@+id/needle_lengths_row"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/TextAppearance.App.Subtitle2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="10dp"
+                        android:text="@string/needle_lengths" />
+
+                    <TextView
+                        android:id="@+id/item_needles_lengths"
+                        style="@style/TextAppearance.App.Subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <!-- Needle material -->
+                <TableRow
+                    android:id="@+id/material_row"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/TextAppearance.App.Subtitle2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="10dp"
+                        android:text="@string/needle_material" />
+
+                    <TextView
+                        android:id="@+id/item_needles_material"
+                        style="@style/TextAppearance.App.Subtitle1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <!-- Wire lengths -->
+
+                <TableRow
+                    android:id="@+id/wire_row"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/TextAppearance.App.Subtitle2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="10dp"
+                        android:text="@string/wire_lengths" />
+
+                    <TextView
+                        android:id="@+id/item_needles_wire_lengths"
+                        style="@style/TextAppearance.App.Subtitle1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+
+                <!-- Needle Notes -->
+                <TableRow
+                    android:id="@+id/notes_row"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/TextAppearance.App.Subtitle2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="10dp"
+                        android:text="@string/notes" />
+
+                    <TextView
+                        android:id="@+id/item_needles_notes"
+                        style="@style/TextAppearance.App.Subtitle1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </TableRow>
+
+            </TableLayout>
+
+
+            <!-- Expand view -->
+
+            <LinearLayout
+                android:id="@+id/item_needles_expand_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/item_needles_btn_delete"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:padding="10dp"
+                        android:src="@drawable/icon_delete"
+                        app:tint="@color/primary_color_300" />
+
+                    <ImageView
+                        android:id="@+id/item_needles_btn_edit"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:padding="10dp"
+                        android:src="@drawable/icon_create"
+                        app:tint="@color/primary_color_300" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Edit layout -->
+        <LinearLayout
+            android:id="@+id/item_needles_edit_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:padding="30dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/needle_sizes"
+                android:paddingTop="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/item_needles_edit_needle_sizes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/needle_length"
+                android:paddingTop="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/item_needles_edit_needle_length"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/material"
+                android:paddingTop="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/item_needles_edit_material"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/wire_length"
+                android:paddingTop="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/item_needles_edit_wire_length"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/notes"
+                android:paddingTop="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/item_needles_edit_notes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/item_needles_btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="@string/save" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

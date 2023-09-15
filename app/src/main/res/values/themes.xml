@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+
+    <!-- Splash screen -->
+    <style name="SplashScreen" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">
+            @drawable/background_splash_screen
+        </item>
+        <item name="android:statusBarColor">@color/primary_color_50</item>
+    </style>
+
+</resources>

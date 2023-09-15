@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "356958006357",
+    "project_id": "andknit-75f96",
+    "storage_bucket": "andknit-75f96.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:356958006357:android:c2939863cc13fce8f1b8dc",
+        "android_client_info": {
+          "package_name": "com.example.knit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxPpe1RcQF9BCrQmBjE2IgRESmZ2x2Vqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
